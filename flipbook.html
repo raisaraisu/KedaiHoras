@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipbook</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Memanggil file CSS eksternal -->
+</head>
+
+<style>
+body {
+    font-family: monospace, sans-serif;
+    background-color: #FFFACD; /* LemonChiffon untuk latar belakang */
+    color: #2F4F4F; /* DarkSlateGray untuk teks */
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #B22222; /* FireBrick untuk header */
+    color: #FFF;
+    text-align: center;
+    padding: 20px;
+}
+nav {
+    background-color: #DAA520; /* GoldenRod untuk navigasi */
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: #FFF;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+}
+nav a:hover {
+    color: #2F4F4F; /* DarkSlateGray saat hover */
+}
+.marquee {
+    font-size: 24px;
+    color: #B22222; /* FireBrick untuk teks berjalan */
+    padding: 10px;
+    background-color: #DAA520; /* GoldenRod untuk latar belakang teks berjalan */
+}
+main {
+    padding: 20px;
+    text-align: center;
+}
+footer {
+    background-color: #B22222; /* FireBrick untuk footer */
+    color: #FFF;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.notification {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50; /* Hijau untuk notifikasi sukses */
+    color: white;
+    font-size: 30px;
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    opacity: 0;
+    animation: slideIn 0.5s forwards, fadeOut 3s 2.5s forwards;
+}
+ slideIn {
+    from {
+        transform: translateX(-50%) translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+    }
+}
+ fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+</style>
+<body>
+
+    <header style="display: flex; align-items: center; justify-content: center; position: relative; padding: 10px;">
+        <img src="https://i.pinimg.com/736x/9e/85/8c/9e858c19180f13d9f87638558d8f6898.jpg" alt="Logo Kedai Cak Horas" width="100" height="100" style="position: absolute; left: 10px;">
+        <h1>WELCOME TO KEDAI CAK HORAS</h1>
+    </header>
+
+    <nav>
+        <a href="tastestos.html#menu">Menu</a>
+        <a href="tastestos.html#order">Order Now</a>
+        <a href="tastestos.html#video">Tutorial PKWU</a>
+		<a href="flipbook.html">English Flipbook</a>
+    </nav>
+
+    <div class="marquee">
+        <marquee>Special Discount Promo Only Today! Get a 20% Discount For Student</marquee>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <h2 style="text-align: center; font-size: 32px; text-decoration: underline;">OUR FLIPBOOK</h2>
+
+
+	<section>
+        <center>
+            <a href="https://heyzine.com/flip-book/05c7bb1994.html"> 
+                <img src="https://i.pinimg.com/736x/94/c8/af/94c8afcfd7288b8fc2163dcea87454ef.jpg" height="400">
+            </a>
+        </center>
+        <h2 style="text-align: center">Please tap the photo above</h2>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    <footer>
+        <p>&copy; 2025 Kedai Cak Horas | All rights reserved</p>
+    </footer>
+
+</body>
+</html>

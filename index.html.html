@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="id">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedai Cak Horas!</title>
+    <style>
+        body {
+            font-family: monospace, sans-serif;
+            background-color: #FFFACD; /* LemonChiffon untuk latar belakang */
+            color: #2F4F4F; /* DarkSlateGray untuk teks */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #B22222; /* FireBrick untuk header */
+            color: #FFF;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #DAA520; /* GoldenRod untuk navigasi */
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #FFF;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #2F4F4F; /* DarkSlateGray saat hover */
+        }
+        .marquee {
+            font-size: 24px;
+            color: #B22222; /* FireBrick untuk teks berjalan */
+            padding: 10px;
+            background-color: #DAA520; /* GoldenRod untuk latar belakang teks berjalan */
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #2F4F4F; /* DarkSlateGray untuk border */
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #B22222; /* FireBrick untuk background header tabel */
+            color: #FFF;
+        }
+        td {
+            background-color: #FFFACD; /* LemonChiffon untuk background tabel */
+        }
+        form {
+            margin-top: 30px;
+            background-color: #2F4F4F;
+            color: #FFF;
+            padding: 20px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+        input[type="text"], input[type="number"], input[type="submit"] {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border: 2px solid #DAA520; /* GoldenRod untuk border input */
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #B22222; /* FireBrick untuk tombol submit */
+            color: #FFF;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #8B1A1A; /* Gelap saat hover */
+        }
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        footer {
+            background-color: #B22222; /* FireBrick untuk footer */
+            color: #FFF;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Style untuk notifikasi mengambang yang besar */
+        .notification {
+            display: none;
+            position: fixed;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #4CAF50; /* Hijau untuk notifikasi sukses */
+            color: white;
+            font-size: 30px;
+            padding: 30px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 9999;
+            opacity: 0;
+            animation: slideIn 0.5s forwards, fadeOut 3s 2.5s forwards;
+        }
+
+        /* Animasi notifikasi muncul */
+        {
+            from {
+                transform: translateX(-50%) translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(-50%) translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Animasi notifikasi menghilang */
+        {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header style="display: flex; align-items: center; justify-content: center; position: relative; padding: 10px;">
+        <img src="https://i.pinimg.com/736x/9e/85/8c/9e858c19180f13d9f87638558d8f6898.jpg" alt="Logo Kedai Cak Horas" width="100" height="100" style="position: absolute; left: 10px;">
+        <h1>WELCOME TO KEDAI CAK HORAS</h1>
+    </header>
+    
+    
+
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#order">Order Now</a>
+        <a href="#video">Tutorial PKWU</a>
+		<a href="flipbook.html">English Flipbook</a>
+    </nav>
+
+    <div class="marquee">
+        <marquee>Special Discount Promo Only Today! Get a 20% Discount For Student</marquee>
+    </div>
+    <br>
+    
+    <main>
+        <style>
+            table, th, td {
+              border-collapse: collapse;
+            }
+            
+            th:nth-child(even),td:nth-child(even)
+            </style>
+            </head>
+            <body>
+            
+            <h2 style="text-align: center; font-size: 32px; text-decoration: underline;">INTRODUCING OUR MEMBERS!</h2>
+            
+            <table style="width:100%">
+                <tr>
+        <td><img src="https://i.pinimg.com/736x/78/36/e4/7836e4f88e3b74c551d23c7e164a4157.jpg" height="150"><br>Aulia</td>
+        <td><img src="https://i.pinimg.com/736x/97/bb/8a/97bb8ad862f2373917e453d7177d4ae1.jpg" height="150"><br>Khayla</td>
+        <td><img src="https://i.pinimg.com/736x/bf/65/07/bf6507e93107052089c139c230058137.jpg" height="150"><br>Qeila</td>
+        <td><img src="https://i.pinimg.com/736x/9f/6c/b6/9f6cb650809253579a71f62fdcfb9c75.jpg" height="150"><br>Raisa</td>
+        <td><img src="https://i.pinimg.com/736x/c8/3d/d0/c83dd01b4ebfd9ecd23039e73da2dc04.jpg" height="150"><br>Raya</td>
+        <td><img src="https://i.pinimg.com/736x/a5/8b/9a/a58b9a957c0b59de3d051639ba2facfe.jpg" height="150"><br>Syavina</td>
+    </tr>
+            </table>
+            
+            </body>
+        </main>
+
+    <main>    
+        <section id="menu">
+            <h2 style="text-align: center; font-size: 32px; text-decoration: underline;">OUR MENU</h2>
+
+            <table>
+                <tr>
+                    <th>No</th>
+                    <th>Image</th>
+                    <th>Food</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><img src="https://hock.id/cdn/shop/articles/fennyfennychandra_159242016_128723762513509_4666867465261700244_n_2048x.jpg?v=1651388401" alt="Lontong sayur" width="100"></td>
+                    <td>Lontong Sayur Medan</td>
+                    <td>Rp15.000</td>
+                    <td>Lontong sayur medan with spiced sauce richness</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="https://www.masakapahariini.com/wp-content/uploads/2020/10/mie-gomak-500x300.jpg" alt="Gomak" width="100"></td>
+                    <td>Add Gomak Noodle</td>
+                    <td>Rp20.000</td>
+                    <td>Dried noodles that are shaped like sticks and are more yellow to orange in color. Gomak Noodle is often referred to as Batak spaghetti.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="https://cdn0-production-images-kly.akamaized.net/VKGxocJLzxCzZZ9i-7L0pD2SDfc=/0x198:770x632/640x360/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3918731/original/088890200_1643476605-Tauco-udang.jpg" alt="Tauco" width="100"></a></td>
+                    <td>Add Tauco</td>
+                    <td>Rp50.000</td>
+                    <td>Made from fermented soybeans soaked with sea salt. It has a distinctive aroma and flavor and is used in traditional Indonesian cuisine, particularly in dishes such as vegetables, stir-fries and sauces. </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><img src="https://img.kurio.network/PP7wUafxNGiLVg4Qplr4WBIMIVo=/440x440/filters:quality(80)/https://kurio-img.kurioapps.com/21/03/03/e8954a8a-c63d-4a80-a1ad-154473c6f4c4.jpe" alt="Balado" width="100"></td>
+                    <td>Add Telur Balado</td>
+                    <td>Rp30.000</td>
+                    <td>Consists of boiled eggs that are fried and then doused with a spicy and savory sambal balado sauce. </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><img src="https://www.dapurkobe.co.id/wp-content/uploads/tempe-orek-pedas.jpg" alt="Orek" width="100"></td>
+                    <td>Add Orek Tempe</td>
+                    <td>Rp30.000</td>
+                    <td>Made from diced tempeh and cooked with special spices.</td>
+                </tr>
+               
+                <tr>
+                    <th>No</th>
+                    <th>Image</th>
+                    <th>Beverage</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><img src="https://file-public.mokapos.com/inventory/500082/large_000000983517_01_800.jpg" alt="Ice Tea" width="100"></td>
+                    <td>Iced Tea</td>
+                    <td>Rp3.000</td>
+                    <td>A drink brewed from tea leaves with no added sugar or artificial sweeteners.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="https://sugarspunrun.com/wp-content/uploads/2022/05/Easy-sweet-tea-recipe-4-of-6.jpg" alt="Lemon Tea" width="100"></td>
+                    <td>Lemon Iced Tea</td>
+                    <td>Rp5.000</td>
+                    <td>The brewed tea is then mixed with sugar and ice cubes.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="https://img-global.cpcdn.com/recipes/2e51a10f0fcb9d0d/1360x1928cq70/teh-telur-khas-minang-sumatera-barat-foto-resep-utama.webp" alt="Susu Telur" width="100"></td>
+                    <td>Egg Milk Tea</td>
+                    <td>Rp13.000</td>
+                    <td>With the right amount of tea, milk and egg, it gives a unique flavor. Perfect to enjoy when you feel cold and weak.</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><img src="https://www.apasih.web.id/wp-content/uploads/2017/10/skuteng.jpg" alt="Oyen" width="100"></td>
+                    <td>Iced Oyen</td>
+                    <td>Rp20.000</td>
+                    <td>It is served chilled with ice cubes, with a variety of toppings on the side. Such as longan, raisin grapes, angco, various mushrooms, kietna oranges to jali-jali or barley that has been boiled.</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><img src="https://parto.id/asset/foto_produk/9UwtN3qZEW0UyvkjTWuWaoSTmfGQrkWZ9fdYW8OP.jpg" alt="Mineral" width="100"></td>
+                    <td>Mineral Water</td>
+                    <td>Rp20.000</td>
+                    <td>This drink is famous not only for its refreshing properties, but also for the unique flavor that its herbal blend offers.</td>
+                </tr>
+            </table>
+        </section>
+
+        <br>
+<br>
+<br>
+<br>
+<br>
+
+        <section id="order">
+            <h2 style="text-align: center; font-size: 32px; text-decoration: underline;">ORDER FORM</h2>
+
+            <form id="orderForm" action="#" method="POST" onsubmit="showNotification(event)">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="food">Choose your menu</label>
+                <input type="text" id="food" name="food" required>
+				
+				<label for="address">Address for delivery</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" name="quantity" required>
+
+                <input type="submit" value="Order now">
+                <h2 style="text-align: center;text-decoration: underline;">Or contact us at 085782829625</h2>
+            </form>
+
+            <!-- Notifikasi -->
+            <div id="notification" class="notification">
+                Order received, thank you for ordering!
+            </div>
+        </section>
+<br>
+<br>
+<br>
+<br>
+<br>
+        <section id="video">
+            <h2 style="text-align: center; font-size: 32px; text-decoration: underline;">TUTORIAL VIDEO</h2>
+
+            <a href="https://youtu.be/gHzw3wvSL0w?si=pog9Qxk3f8PM33y6"> 
+                <img src="https://i.pinimg.com/736x/ea/8b/1a/ea8b1ae8073d2af0626719a2ffabcb8d.jpg" height="400"></a>
+
+                <h2 style="text-align: center">Please tap the photo above</h2>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kedai Cak Horas | All rights reserved</p>
+    </footer>
+
+    <script>
+        // Fungsi untuk menampilkan notifikasi
+        function showNotification(event) {
+            event.preventDefault(); // Mencegah form untuk submit biasa
+            const notification = document.getElementById('notification');
+            notification.style.display = 'block';
+
+            // Menyembunyikan notifikasi setelah 3 detik
+            setTimeout(function() {
+                notification.style.display = 'none';
+            }, 3000);
+        }
+    </script>
+
+</body>
+</html>
